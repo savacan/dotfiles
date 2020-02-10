@@ -27,9 +27,9 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 
 # symlink dotfiles
-ln -sf ~/dotfiles/.zprezto ~/.zprezto
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.zpreztorc ~/.zpreztorc
+ln -sf $DOTPATH/.zprezto ~/.zprezto
+ln -sf $DOTPATH/.zshrc ~/.zshrc
+ln -sf $DOTPATH/.zpreztorc ~/.zpreztorc
 
-source ~/dotfiles/.zshrc
-source ~/dotfiles/.zpreztorc
+source $DOTPATH/.zshrc
+source $DOTPATH/.zpreztorc
